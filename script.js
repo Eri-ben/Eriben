@@ -4,20 +4,34 @@ $(".isdraggable").draggable({ axis: "x" });
 
 $(function () {
   var imgsource = [
-    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2F1.png?v=1595631599041",
-    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2F2.png?v=1595631606412",
-    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2F3(1).png?v=1595862222741",
-    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2F4.png?v=1595631615281",
-    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2F5.png?v=1595631619789",
+    "images/HCD_Demo_Iteration1/0.png",
+    "images/HCD_Demo_Iteration1/1.png",
+    "images/HCD_Demo_Iteration1/2.png",
+    "images/HCD_Demo_Iteration1/3.png",
+    "images/HCD_Demo_Iteration1/4.png",
+    "images/HCD_Demo_Iteration1/5.png",
+    "images/HCD_Demo_Iteration1/6.png",
+    "images/HCD_Demo_Iteration1/7.png",
+    "images/HCD_Demo_Iteration1/8.png",
+    "images/HCD_Demo_Iteration1/9.png",
+    "images/HCD_Demo_Iteration1/end.png",
   ];
 
   var soundsource = [
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FNewHiUserWhereGo.mp3?v=1595518879441",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FBeep.mp3?v=1595632656444",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FOkYouwouldliketogotowork.mp3?v=1595632659479",
-    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FBeep.mp3?v=1595632656444",
+    "",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2Fpedestrianwarningsound.mp3?v=1595939676728",
+    "",
+    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FFastestRouteToWork.mp3?v=1598312406576",
+    "",
+    "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FGoingHomeAlternateRoute.mp3?v=1598312448572",
+    "",
+    "",
   ];
+
+  var checkforsound = [0, 1, 2, 6, 8];
 
   var descriptionsource = [
     '<p class="description"><i>"Hi, user. Where would you like to go?"</i><br><br> This is the first screen that greets the user upon entering their car.' +
@@ -32,6 +46,12 @@ $(function () {
       '"planned actions"' +
       " column to give the user some transparency of what is going on.</p>",
     "<p class='description'>If something sudden would happen during the trip, such as a pedestrian suddenly crossing the street, this is quietly conveyed by a clear but not too disturbing signal, as to not disturb the passengers. <br><br> <i>Note: The sound effect is highly speculative, I am by no means close to being a sound designer. The idea was to have a signal that wasn't too disruptive, yet easily discernible.<i/></p>",
+    '<p class="description">After this, the trip continues normally.</p>',
+    '<p class="description"><i>"There was an accident at Southernway Street. <br>I determine this new route will be the fastest way to Work."</i> <br><br> Suppose an accident has just happened ahead. The Iris system gets notified and prepares a reroute as to not get stuck in the traffic. It also updates the map. </p>',
+    '<p class="description">Consider, now, that one has been at work the whole day and would like to go home.</p>',
+    '<p class="description"><i>"Going home. Since it is 15:06 and school is out, we will take an alternate route."</i> <br><br> Iris has learned about its environment and knows that a lot of traffic is likely to be imminent during this hour at a school area the car usually would take. It therefore re-directs to an alternative route as that is now the better choice.</p>',
+    '<p class="description">It then takes the new route.</p>',
+    '<p class="description"><br>And that was it for demo 1! Stay updated on the design changes made after the testing below, and see the full Demo 2 at the bottom of the page! </p>',
   ];
 
   var answersource = [
@@ -39,6 +59,12 @@ $(function () {
     ["← Previous", '<i>"I' + "'m" + ' going to work</i>" →'],
     ["← Previous", '<i>"Yeah"</i> →'],
     ["← Previous", "Next slide →"],
+    ["← Previous", "Next slide →"],
+    ["← Previous", "Next slide →"],
+    ["← Previous", "Next slide →"],
+    ["← Previous", '<i>"I would like to go home"</i>'],
+    ["← Previous", "Next slide →"],
+    ["← Previous", "End slide →"],
     ["← Previous", "Restart"],
   ];
 
