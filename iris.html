@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IRIS</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="smallstyle.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+    <!-- Import jquery ###TA BORT OM EJ ANVÄNDS###-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+  </head>  
+  
+  <body>
+
+    <div class="back" onclick="window.location='index.html'">
+      <img src="images/arrow.png" class="backicon">
+      Return to start page
+    </div>
+    <div class="container">
+      <div class="projectheader" style="width: 95%; margin: 16px auto;">
+      IRIS  
+      </div>
+      <p style="width: 95%; margin: 16px auto;">Autonomous Vehicle System For Trust</p>
+      <div style="text-align: center;">    
+        <img src="images/dashtesla1.png" id="irisimg_big" style="border-radius: 5px;">
+      </div>
+      <div class="projectcontent">
+        <div class="projectsubheader">Background and Summary</div>
+        <p>The development of autonomous cars is progressing rapidly and in the coming few years we may see the first fully autonomous cars be sold in the market. However,
+        with the advancement of new technology comes new challenges. In particular, trust has been found to be an important factor preceding a will to adopt new technology.
+        <br><br>  
+        In this project, me and my partner Brendan Ritchet present a conceptual design for a level 4-5 autonomous car (According to the SAE Levels) with a focus on covering aspects of trust related to communicating 
+        predicted possible dangers.
+        <br><br>
+        The project followed a general approach of Human-Centered Design (HCD) process according to the ISO 9241-210 standard. Two design iterations were performed. <br><br>
+        The final design was made in Figma.
+        </p>
+        
+        <div class="projectsubheader">Problem Statement</div>
+        <p>
+          How can we design an autonomous car system to create and maintain trust?
+        </p>
+        
+        <div class="projectsubheader">
+          Demo
+        </div>
+        <div style="margin-top: 16px; margin-bottom: 32px; text-align: center;">
+          <img src="images/prototypecollage1.png" style="width: 100%;" class ="isdraggable">
+        </div>
+        
+        <div class="projectsubheader">Research</div>
+        Our project was to be undertaken in a short amount of time, so we had to be efficient in our methods choices. We performed a literature study to get updated on the latest research
+        in the area, hosted a focus group to gather first hand information and opinions from potential users' to discuss in a group as it is a complex subject, and complemented our sample size
+        from the focus group method with an online questionnaire.
+        
+        <div class="projectsubheader" style="margin-top: 16px;">Process</div>
+        <div style="width: 100%; text-align: center;">
+          <img src= "images/Process2_HCD.png" style="width: 85%; text-align: center;"><br>
+          <sup style="font-size:x-small;">The Lit. Study, Focus Group and Questionnaire were actually done in parallel, but are shown as above for simplicity.</sup>
+        </div>
+        
+       <h3>The Literature Study</h3>
+        The Literature Review consisted of searching for and reading several papers related to the area. Among other sources, we read about trust in systems via Choi and Ji (2015)<sup>1</sup> anthropomorphism
+        to increase trust in vehicles from Waytz, Heafner and Epley (2004)<sup>2</sup>.<br><br>
+       
+        <h3>The Focus Group</h3> 
+          <div class="methoddescription">
+          The Focus group consisted of 7 university students from Gothenburg, Sweden, recruited via a combination of opportunity sampling 
+          and snowball sampling. The younger sampling group was deemed fitting as they could be seen as a possible user group of early adopters 
+          of new technology such as self-driving cars. <br><br>
+          
+          Brendan was the facilitator of the Focus Group, and I sat in the background taking notes. <br><br>
+          
+          The Focus Group lasted 2 hours and began more generally talking about trust in general and what seemed to induce trust for the participans. 
+          Over time, we slowly moved more specifically to autonomous
+          cars and trust, eventually reaching 3 main talk points centered around prepared use cases.<br><br> <!--Utöka? Ha med use cases? Få med postits?-->
+            
+          During the session, participants and the facilitator noted down interesting concepts that were discussed or mentioned. These were combined with notes from the note-taker
+          as well as some qualitative data from the Questionnaire to perform a Content Analysis.
+      
+          </div>
+          <div class="methodimgdiv">
+            <img src="images/focusgroupimg.png" id="focusgimg">
+          </div>
+        
+          <h4>
+            Affinity Diagram
+          </h4>
+          <div>
+    
+            <div class="methodimgdiv" style="padding-right: 100px;">
+              <img src="images/affinitydiagram.jpg" id="affinityimg">
+            </div>
+            <div class="methoddescriptionrightalign" style="vertical-align:top;">
+              After the Content Analysis had been performed, the accumulated result was further processed using the Affinity Diagram Method to form clusters of themes. 
+              <br><br>
+              This helped us gain insights of what aspects and qualities were important to consider when designing systems for trust, and why. 
+            </div>
+          </div>
+          
+        
+        <h3>The Questionnaire</h3>
+        
+          <div class="methoddescription">
+          The Web Questionnaire was sent to various web forums and sites, such as a group for university students in Gothenburg, but also 
+          on open websites such as Reddit and Facebook. In total, 65 responses were gathered.
+          
+          The questions began with demographic questions and questions about car usage experiences. Finally, a set of 1-7 Likert Scale questions were
+          presented. They can be divided into 3 overall themes: <br><br>
+            <ul>
+              <li class="nonelist" style="margin-bottom:3px; margin-left:-16px;">• Questions regarding when to alert/notify the user</li>
+              <li class="nonelist" style="margin-bottom:3px; margin-left:-16px;">• Questions regarding how the user would like notifications be presented</li>
+              <li class="nonelist" style="margin-bottom:3px; margin-left:-16px;">• Questions regarding having autonomous vehicle systems be time efficient versus informative</li>
+            </ul>
+          </div>
+
+          <div class="methodimgdiv">
+            <!--<img src="https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FResponsesimg.png?v=1594825131198" style="width: 300px; margin-bottom: 50px;  box-shadow: 3px 3px 8px #f3f3f3;">-->
+            <img src="images/surveysvg.svg" style="width: 300px; margin-left: 32px;">         
+          </div>
+        
+        <h4>T-test analysis</h4>
+        <p>
+          Different age groups and user groups were compared using t-tests. A few interesting findings came from this, among others we noted that:
+          
+          <ul>
+            <li>Respondents with no driver's license were significantly more positive with the idea of getting notifications via text than those with a license (p=.013).</li>
+            <li>Respondents aged 56+ were less likely to answer having a positive attitude towards getting notifications and warnings via the means of symbols/pictures compared to 19-35 
+              y.o (p=.026) and 36-55 y.o (p=.046).</li>
+          </ul>
+          
+          <div  style="text-align: center; margin-top: 16px; margin-bottom: 16px;">
+             <img src="images/quantres1.png">
+          </div>
+         
+           
+          <p style="margin-bottom: 32px;">We determined that our results were however still highly speculative due to the novel nature of autonomous cars. Going forward, we concluded that there is still possible
+          value in considering all types of solutions. Nevertheless, the clear differences in for instance individuals with and without a driver's license reminded us that
+          this is indeed a delicate topic that needs thoughtful consideration between different user groups' needs and requirements.</p>
+        
+        </p>
+      
+         <div class="projectsubheader">Defining requirements</div>
+          <div class="requirements">
+            <p>
+              After having performed our initial research, we (sat down to define our requirements of our desinged system). Our requirements can largely be divided into
+              three different themes: transparency, anthropomoprhism, and information to display.
+            </p>
+            
+            <h4>Transparency</h4>
+            <div>
+              <img src="images/opacity.svg">
+              <p>
+              Both our theoretical research from our literature studies and our Focus Group underlined the importance of being able to track the system if one 
+              wants to. This principle can be said to be important for all types of interface design, but may be extra important in regards of gaining user's trust. 
+              Our system thus needs to be able be effective at displaying what is going on, what has happened and what is going to happen.
+              to convey all information
+              </p>
+            </div>  
+  
+          
+            <h4>Anthropomorphism</h4>
+            <div>
+              <img src="images/message.svg">
+              <p>
+              Research has found that people tend to show less negative feelings towards technology with qualities that resembles living, especially when failing
+              to deal with the situation. In the long term, this can help in establishing trust. Our system should at least have some anthropomorphic features to 
+              facilitate the transition for new users to adopt the new technology.
+              </p>
+            </div>  
+           
+            <h4>Information to display</h4>
+            <div>
+              <img src="images/server.svg" style="vertical-align: top;">
+              <p>
+                While still open for discussion, there is arguably a balance between conveying relevant information, and conveying <i>too much</i> information.
+                This was repeatedly conveyed during our Focus Group session.
+                
+                One important aspect when designing for vehicles is the situated experience of the user, which is affected much more by the surrounding than the
+                general mobile or computer application. For this reason, the system needs to be able to accomodate a richness in information for the right moment, 
+                while still not being too overwhelming for the users to take in efficiently.
+              </p>
+            </div>  
+           
+          </div>
+               
+        <h3>Parallel Prototyping</h3>
+          <div>
+            <div class="methodimgdiv" style="padding-right: 75px;">
+              <img src="images/sketches.JPG" style="width: 115%; border-radius: 3px;">
+            </div>
+            <div class="methoddescriptionrightalign" style="vertical-align:top;">
+              Next, as me (I?) and Brendan would be away from each other for a couple of days, we decided to use the time slot for some parallel prototyping. Both of us would take
+              our time to ideate and sketch different ideas. We used our findings from our previous research in the process to guide us, and our only constraints were that our
+              solution be situated inside a car with a tablet sized touch-screen by the driver'seat.
+            
+              After we met again, we presented our sketches to each other and combined our ideas to a unified set.<br><br>
+              As we found in our earlier research, high fidelity appears to an important factor for trust, so we opted to make a high-fidelity prototype
+              before testing our design.
+            </div>
+          </div>
+      
+      </div>
+    </div>
+    
+  
+    
+    
+    <div class="democontainer">
+        <h2 style="text-align: center;">IRIS Design 1 Demo</h2>
+        <div style="text-align: center">
+          <div class="viewer" style="display: inline-block; max-width: 500px;">
+            <img src="https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2F1.png?v=1595631599041" style="width: 500px;">
+          </div>
+          <div class="demoinfocontainer" style="">
+              <h3 id="demoslideheader"></h3>
+              <div id="audio">
+                 <!--<audio controls>
+                    <source src="https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FNewHiUserWhereGo.mp3?v=1595518879441" type="audio/mp3">
+                    [AUDIO FILE]: Browser does not support playing mp3 files.
+                  </audio> -->
+              </div>
+              <div id="demotextfield">
+                <!--<p><i>"Hi, user. Where would you like to go?"</i><br><br>
+                  This is the first screen that greets the user upon entering their car.   As 
+                  this is a speculative design for a future car, it is assumed that the system has a way to determine who enters the car.</p>-->
+              </div>
+              <div class="button" id="prev" value="100" style="display: inline-block; width: auto; padding-left: 32px; padding-right: 32px;">← Previous</div>
+              <div class="button" id="next" value="120" style="display: inline-block; width: auto; padding-left: 32px; padding-right: 32px;">Next →</div>
+          </div>
+          </div>
+        </div>
+      
+        <div class="container" style="margin-bottom: 128px;">
+          
+           <div class="projectcontent">
+             <div class="projectsubheader"><i></i>Rationale</div>
+               <p>
+                This section presents a short (rationale) of our first design, before iterating it.
+               </p>
+             <div>
+                <div class="tab_button" id="transparency_button" value="#transparency_rationale">Transparency</div>
+                <div class="tab_button" id="anthro_button" value="#anthro_rationale">Anthropomorphism</div>
+                <div class="tab_button" id="infotodisplay_button" value="#infotodisplay_rationale">Information to Display</div>
+             </div>
+             
+             <div id="transparency_rationale" class="rationalecontent">
+               <h4>Transparency</h4>        
+               <p>
+                 The focus of the interface is to provide easy access to macro-micro level information consistently, so that it can be easily acceessed without having to navigate. 
+                 After plenty of consideration and sketching, we landed on a layout which manages to give room for information on an operation, action, and activity level.
+                 
+                 <ul>
+                   <li style="margin-bottom: 8px;">
+                     <i>Operation Level:</i> The middle part of the screen provides a visual of the immediate surrounding which helps the user <i>see</i> that the vehicle has vigilance. Seeing how the
+                     correctly identifies a pedestrian (Slide 5) in real time builds credibility, which in the long time can help in basing trust. Being able to monitor the progress over time on demand 
+                     presents many opportunities for this.</li>
+                   <li style="margin-bottom: 8px;">
+                     <i>Action Level:</i> On the outer edges of the lower part of the screen, the "Decision Log" and "Planned Actions" views can be found. 
+                     These provide decision-making level intel about past events and what the planned decision path is. Having the ability to view the decision log history can help the user get an
+                     understanding of how the autonomous car system is working.
+                   </li>
+                   <li style="margin-bottom: 8px;">
+                     <i>Activity Level:</i> The map gives a macro-level overview similar to a traditional GPS system. It tells the user about the long-term goal of the trip, and visually summarizes the status
+                     of its progress. Together with the (Iris relay system), it can also be used to provide information about macro-level decision-making, such as when the car is re-routing (for example by showing the new
+                     route path(s) available). 
+                   </li>
+                 </ul>
+               The important thing here is that the system acknowledges that all this information and data could be of interest and that the user has the ability to easily skim it through. With this (possibly massive) amount
+               of information comes the challenge of <i>information to display</i>, which it is related to.
+               </p>
+             </div>
+              
+          
+            <div id="anthro_rationale" class="rationalecontent">
+              <h4>Anthropomorphism</h4>
+              <p>
+                The anthropomorphic qualities of Iris are manifested in the natural speech voice system resembling a more human approach. Yet, I do feel we could have done more on this front.
+                The idea was to have Iris have an avatar with animated sequences to increase anthropomorphic qualities - but it was later change to a sound wave in order to save time. <br><br>
+              
+                In interactional linguistics, turn-taking and its dynamic is a key component which can be used to describe the direction of a conversation. The idea with "Ok, you would like to go to X, did I get it right?"
+                was that it should to some extent resemble a natural conversation. This may or may have not been a successful design, as one could argue that it adds uneccesary excise instead. Yet, it was an interesting
+                experimental qualtiy to include. My take on this is that Iris and other Voice User Interfaces should only use the re-assuring "Did I get it right?"-pattern if it in itself is not too sure about what was just said,
+                and not have it as a (standard) event, similar to how a possible normal conversation could be. <br><br>     
+
+                Still, the interface does lend at least some stimulus to give the impression of a partly living agent. Anthropomorphism is still quite new  in the area of design and I can't wait to learn 
+                more about this area in the upcoming future.
+              </p>
+            </div>
+              
+            <div id="infotodisplay_rationale" class="rationalecontent">
+              <h4>Information to display</h4>
+               <p style="margin-bottom: 64px; ">
+                  In many ways, information to display is linked to what is written under transparency, in that it wants to successfully communicate the intel provided by things such as transparency.
+                  However, the focus here is not about being transparent, but being able to transmit a lot of information without causing too much mental workload or excise.
+                  For this reason, we have chosen to keep most of the travel-relevant information to be displayed at the same time on screen. The user should not have to navigate
+                  in order to look for two different things (e.g. looking on the map where he or she is - to then check for planned actions) as this is in on a road setting,
+                  where things can happen very quickly, or even pose danger in some very rare cases.
+                 
+                  <br><br>
+                 
+                  While one could argue that this efficiency is not as needed as when one is not the driving agent of the car, our research from the Focus Group and Questionnaire revealed
+                  that users could become anxious if they would not be able to see this (Related to transparency). [Interestingly however, this tendency appeared to be much stronger for users
+                  with a driver's license, compared to those without one - who seemed to be more OK with less information be displayed.]
+                 
+                  Roughly, the display can be divided in three clusters, which <a style="color:blue">clusters</a> graphical elements in relating to each other in levels ranging from macro (Activity-level) to micro (Operation level).
+                  See the list under <i>transparency</i> for more information about this division. <!--<a id="gototransparency">(Go to↑)</a>. -->      
+               </p>
+            </div>
+             
+            
+              <div class="projectsubheader">User testing</div>
+              <p>
+                <b><i>Procedure: </i></b>To test our prototype, we ran some user tests with a total of 5 participants between 23-28 years old. The set-up was quite simple - testers were let through the designs of our three
+                scenarios: 1) IRIS detects a pedestrian, 2) IRIS avoids path with accident, 3) IRIS avoids normal route due to daily event (See Demo). <br><br>
+                
+                The user test followed an A-B-A-B-A-B procedure (OK to say repeated measures procedure?), 
+                where each test scenario was followed up by a short questionnaire before continuing to the next scenario. Questionnaire items mainly touched on topics such as
+                trust and safety.
+                
+                Questionnaires were chosen over observation or interviews as we believe that trust is hard to judge by the looks of people, and to give them room to reflect on their answers
+                without having to quickly respond to an interviewer.   <br><br>
+                
+                Findings were compiled using a slimmed down version of usability.gov's template of a
+                <a href="https://www.usability.gov/how-to-and-tools/resources/templates/report-template-usability-test-short.html">short/informal usability test</a>,
+                which produced a table of findings and recommendations based on the findings.
+                
+                <div style="text-align: center; margin: 24px;">
+                  <img style="width: 500px; border-radius: 3px; margin: 0 auto;" src="images/testsettingiris1.png">
+                </div>
+                
+                <b><i>Results: </i></b> Results indicate that testers liked the proposed design and felt like it would help them establish trust in the system.
+                Especially the richness of constant information and transparency provided, and that it seemed to stay updated on things they wouldn't know (e.g. the area avoidance scenario due to traffic accident) helped 
+                them establish feelings of trust. <br><br>
+             
+                Yet, we got a lot of valuable feedback of what could be improved for our design. A full list of findings of things to improve on and their recommended
+                solutions can be found on this <a href="https://docs.google.com/document/d/1OwhXoasn1x_JNYYH2LTcd_dFIeyMEmB1RjJ6i6X5XQg/edit?usp=sharing">Google drive link</a>.
+                <div class="button" style="margin: 24px 0 0 0;" onclick="window.location='iris.html'">Drive Link</div>
+                <br><br>
+                Some of the key insights from this test can be summarized as:
+                <ul>
+                  <li style="margin-bottom: 1px;">Testers wanted a possibility to override the system/Iris' decisions - or have the possibility to take part in decision making.</li>
+                  <li style="margin-bottom: 1px;">Indications were that more sound notifications and effects are needed. </li>
+                  <li style="margin-bottom: 1px;">General interface confusions that can easily be iterated upon in future versions. </li>
+                </ul>           
+              </p>
+            
+          
+              <div class="projectsubheader">Second Iteration: Changes</div>
+              Following changes were made:
+              <div style="text-align: center;">
+              <img src="images/annotated_changes.png" style="height: 720px; margin: 32px auto;">
+              </div> 
+  
+              
+              
+              <div class="change_entry">
+                <h3>(1) Redesigned the Top Bar </h3>
+                <img src="images/topchange32.png" style="width: 80%;">
+                <p style="width: 80%; margin-top: 32px;">The top bar was re-designed to include more information about the trip. Trip distance and estimated arrival time were two of the more important additions.</p>
+
+                <br><br>
+              </div>
+              
+              <div class="change_entry">
+                <h3>(2) Added override capabilities</h3>
+                <img src="images/overridecap.png" style="width: 320px; margin: 16px;">
+                <p style="margin-top: 32px; margin-bottom: 96px;"> The system has the first option auto selected, and upon no interaction with the system, it ________________________. This follows the principle of avoiding blank slates from for example
+                Alan Cooper and his colleagues' "About Face" book. <!--This way, the system gives a way for the user to take part in its decision making, while also managing to handle itself as it suits the user--><br><br>
+                
+                We wanted to make the system as modeless as possible so we wanted to avoid using elements such as popups or new screens that could take larger space.  
+                The idea was simple, let the user interact if he or she wants to - but don't force them. For this reason, we chose the method presented above, as it does
+               not take over visual priority from other parts too much, while still being clearly visible for those who want it.
+                </p>
+              </div>
+              
+        
+  
+              <div class="change_entry">
+                <h3>(3) Rephrased Iris verbal interaction</h3>
+                <img src="images/VoiceAssistChange.png" style="width: 90%;">
+                <p>We rephrased the Iris message of scenario 3 (School letting out) to explain that it is re-routing is due to efficiency and not safety.</p><br><br>
+              </div>
+              
+  
+              <div class="change_entry">
+                <h3>(4) Added replay functionality</h3>
+                <img src="images/replaychange.png" style="margin-left:8px;">
+                <p style="margin-top: 32px; margin-bottom: 96px;">This topic was one of the simplest yet hardest additions to our project. Simply speaking, it was not clear whether or not users could <i>repeat</i> what Iris said in case they had not heard everything.
+                Thing was, there was as far as we knew no standards of how to afford auditory interaction from visual sources (Except from the pulsating "speak now" animations).<br><br>
+  
+                Our solution was to add a small replay icon to hint somehow that they can replay the message if they want to (even if it exists in written form). I look forward to see if this area gets more standardization
+                in the future!</p>
+              </div>
+              
+  
+              <div class="change_entry">
+                <h3>(5) Aligned Decision Log and Planned Actions</h3>
+                <img src="images/AlignChange.png" style="width: 100%;">
+                <p style="margin-top: 32px; margin-bottom: 32px;"> We aligned the most recent event on both sides to be on the same vertical position.</p><br><br>
+              </div>
+              
+              <div class="change_entry">
+                <h3>(6) Highlighted last decision</h3>
+                <img src="images/highlightchange.png">
+                <p>The text of the last decision logged is slightly highlighted to make it stand out a bit more.</p><br><br>
+              </div>
+  
+              <div class="change_entry">
+                <h3>(7) Eliminated previous Actions</h3>
+                <img src="images/PlannedActionsChange.png" style="width: 55%;">
+                <p>Previous Actions were deemed uneccesary under Planned Actions, so they were ommitted.</p><br><br>
+              </div>
+  
+              <div class="change_entry">
+                <h3>(8) Changed pedestrian colour</h3>
+                <img src="images/PedestrianChange2.png" style="width: 80%;">
+                <p>The pedestrian was visible for the participants, but it was not as distinct as we had hoped. We changed the colour of the pedestrian to make it more distinct. </p><br><br>
+              </div>
+              
+                
+            
+            
+              <div class="projectsubheader">Second Iteration Demo</div>
+              
+                <div style="height: 550px; width:50%; background-color:#f0f0f0; margin: 32px auto 96px auto;">
+                  <p style="width: 85%; height: 100px; margin: 32px auto; padding-top: 25%;">Placeholder: As a second iteration demo would require a lot of image handling, uploading files to glitch.com, this part will be done
+                on the actual site.
+                </p>
+                </div>
+          
+              <div class="projectsubheader" style="margin-bottom: 16px; margin-top: 16px;">Final Reflections</div>
+              <p>This project has certainly increased my respect for design in the automotive industry. The amount of aspects you need to keep track of and
+                consider can sometimes appear (appalling). But it is also what makes this area so interesting, that everything here so much more explicitly
+                plays a role.<br><br>
+                
+                This prototype project has only touched upon a part of all the important aspects when designing a car system, let a lone an autonomous one. There 
+                is still a lot of opportunity for a lot of research in the area and I will be monitoring its advancements closely as time goes on. <br><br>
+                
+                Lastly, one_more_ending_sentence_here. 
+              </p>
+           </div>
+        <div style="margin-top:128px; text-align:center; font-weight:bold;" class="back" onclick="window.location='index.html'">
+          Next Project (Name here)
+          <img src="images/arrow.png" class="backicon" style="rotate:180deg;">
+        </div>
+        </div>
+       <div class="back" onclick="window.location='index.html'">
+            <img src="images/arrow.png" class="backicon">
+              Return to start page
+          </div>
+  
+  </body>
+  
+</html>

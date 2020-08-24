@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Erik Bennerhed</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 801px)"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 800px)"
+      href="smallstyle.css"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="contentbox introtextbox">
+        <div class="Name">Erik Bennerhed</div>
+        <div id="myintro">
+          <p>
+            UX-Designer, Interaction Designer, Game Designer, Cognitive
+            Scientist.
+          </p>
+          <p>
+            Understanding technology and humans so that we can work in tandem.
+          </p>
+          <p>
+            Erik.Bennerhed@Gmail.com <br />
+            (+46)7093090XX
+          </p>
+        </div>
+      </div>
+      <div class="contentbox" id="portraitdiv">
+        <img src="images/portrait.jpg" id="portrait" />
+      </div>
+
+      <div class="projects">
+        <div class="header">Selection of Projects</div>
+
+        <!-- IRIS Project -->
+        <div>
+          <div class="projectheader">IRIS</div>
+          <p style="margin-top: 16px;">Autonomous Vehicle System For Trust</p>
+          <img src="images/irisIMGver2.png" id="irisimg" />
+          <p class="projecttext">
+            IRIS is a speculative design proposition for a tablet-sized screen
+            for a future autonomous vehicle. The focus of this project was on
+            designing for trust in mind, which after a research process resulted
+            in two main design themes: transparency, and anthropomorphism.
+            <!--These are factors that have been found to increase trust with technology.-->
+          </p>
+          <div
+            id="irisbutton"
+            class="button"
+            onclick="window.location='iris.html'"
+          >
+            Read more
+          </div>
+        </div>
+
+        <!-- NEXT PROJECT -->
+        <div>
+          <div
+            class="projectheader"
+            style="margin-top: 128px; display: inline-block;"
+          >
+            Passive Sound Pollution Tracker for WearOS
+          </div>
+          <p>
+            An app for a Smartwatch that passively monitors your exposed sound
+            pollution during <br />
+            the day using the
+            <a href="https://developer.android.com/design/wear"
+              >WearOS Design Guidelines</a
+            >
+          </p>
+          <img
+            src="images/watch_home.png"
+            class="renterximg"
+            style="height: 400px;"
+          />
+          <img
+            src="images/watch_home_8.png"
+            class="renterximg"
+            style="height: 400px;"
+          />
+          <img
+            src="images/watch_settings.png"
+            class="renterximg"
+            style="height: 400px;"
+          />
+          <p class="projecttext">
+            Extended periods of noise is not only bad for your ears, it hurts
+            your mental well-being and health.
+            <!--However, we found that people
+            often do not think about these extended periods very much unless the
+            change is abrupt, or sometimes after the noise has settled.-->
+            This project produced a prototype of a passive sound recording app
+            for a Smartwatch that lets users modelessly monitor their daily dose
+            of noise as an overlay of their watches' face.
+          </p>
+          <div class="button" onclick="window.location='soundapp.html'">
+            Read more
+          </div>
+
+          <!-- NEXT PROJECT -->
+          <div class="projectheader" style="margin-top: 128px;">
+            URBS<br /><i
+              ><a style="font-size: 24px; font-weight: normal;"
+                >(University Room Booking System)</a
+              ></i
+            >
+          </div>
+          <p>
+            A graphical interface idea for an online platform <br />
+            to book university rooms, studios and other facilities.
+          </p>
+          <img src="images/URBS-1.png" id="urbs_img" />
+          <p class="projecttext">
+            URBS is a UI design for a website for users to view schedules and
+            make bookings in for university rooms and facilities. It combines
+            the activities of <i>viewing</i> and <i>booking</i> into the same
+            sovreign view.
+          </p>
+          <div class="button" onclick="window.location='urbs.html'">
+            Read more
+          </div>
+
+          <!-- OTHER WORK-->
+          <div class="header"></div>
+          <p style="margin-top: 72px; margin-bottom: 32px;">
+            Contact me
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
