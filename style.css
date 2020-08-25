@@ -281,6 +281,7 @@ a {
   border: 1px solid;
   display: inline-block;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .rationalecontent {
