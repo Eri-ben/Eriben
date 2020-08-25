@@ -72,7 +72,6 @@ $(function () {
   $demotextfield = $("#demotextfield");
   $demoslideheader = $("#demoslideheader");
   $index = 0;
-  //var restartclicked = false;
 
   for (var i = 0; i < imgsource.length; i++) {
     $viewer.append("<img class='myslides' src=" + imgsource[i] + "></img>");
@@ -142,7 +141,6 @@ $(function () {
   $(".tab_button").click(function () {
     $(".tab_button").css({ "background-color": "transparent", color: "black" });
     $("#" + this.id).css({ "background-color": "black", color: "white" });
-    console.log($(this).attr("value"));
     $(".rationalecontent").css("display", "none");
     $($(this).attr("value")).css("display", "block");
   });

@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: monospace, Courier New, Georgia, helvetica, arial, sans-serif;
+  font-family: Courier New, Georgia, helvetica, arial, sans-serif;
   /*FÖR FADE IN*/
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
