@@ -21,14 +21,14 @@ $(function () {
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FNewHiUserWhereGo.mp3?v=1595518879441",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FBeep.mp3?v=1595632656444",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FOkYouwouldliketogotowork.mp3?v=1595632659479",
-    "N/A",
+    "",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2Fpedestrianwarningsound.mp3?v=1595939676728",
-    "N/A",
+    "",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FFastestRouteToWork.mp3?v=1598312406576",
-    "N/A",
+    "",
     "https://cdn.glitch.com/3547a892-3bea-433c-8fba-a2b3c75eb938%2FGoingHomeAlternateRoute.mp3?v=1598312448572",
-    "N/A",
-    "N/A",
+    "",
+    "",
   ];
 
   var checkforsound = [0, 1, 2, 6, 8];
