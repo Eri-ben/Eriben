@@ -228,6 +228,23 @@ a {
   -webkit-animation: fadeOut 1s;
 }
 
+#all_changes {
+  height: 780px;
+  margin: 32px auto;
+}
+
+#all_changes_list {
+  height: 550px;
+  vertical-align: top;
+  margin-top: 32px;
+}
+
+#totalchanges_id {
+  text-align: center;
+  width: 900px;
+  margin-left: -25px;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

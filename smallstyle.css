@@ -99,11 +99,11 @@ body {
 }
 
 .renterximg {
-  /*height: 400px;*/
+  /*height: 40px;*/
   border: 1px solid;
   border-color: #eee;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px #f2f2f2;
+  /*box-shadow: 3px 3px 3px #f2f2f2;*/
   margin-top: 24px;
   margin-bottom: 48px;
 }
@@ -117,6 +117,10 @@ body {
   padding: 8px 0;
   margin-top: 32px;
   cursor: pointer;
+}
+
+.requirements div img {
+  width: 150px;
 }
 
 .projectheader {
@@ -165,6 +169,33 @@ a {
 
 #fadeoutid {
   -webkit-animation: fadeOut 1s;
+}
+
+#all_changes {
+  height: 780px;
+  margin: 32px auto;
+}
+
+#all_changes_list {
+  height: 550px;
+  vertical-align: top;
+}
+
+#totalchanges_id {
+  width: 95%;
+  text-align: center;
+}
+
+.tab_button {
+  color: black;
+  width: auto;
+  padding: 8px 16px 8px 16px;
+  text-align: center;
+  border-color: black;
+  border: 1px solid;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @keyframes fadein {
