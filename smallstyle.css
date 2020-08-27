@@ -192,19 +192,25 @@ a {
   text-align: center;
 }
 
-#audio .mysounds {
+#audio .mysounds,
+#audio2 .mysounds2 {
   margin: auto;
 }
 
 .demotextfield,
 .viewer img,
+.viewer2 img,
 .slideheader,
+.slideheader2,
 .mysounds,
-.description {
+.mysounds2,
+.description,
+.description2 {
   display: none;
 }
 
-.myslides {
+.myslides,
+.myslides2 {
   height: 500px;
 }
 
