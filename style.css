@@ -248,7 +248,8 @@ a {
   padding-bottom: 32px;
 }
 
-#demotextfield {
+#demotextfield,
+#demotextfield2 {
   width: 500px;
 }
 
@@ -262,13 +263,18 @@ a {
 
 .demotextfield,
 .viewer img,
+.viewer2 img,
 .slideheader,
+.slideheader2,
 .mysounds,
-.description {
+.mysounds2,
+.description,
+.description2 {
   display: none;
 }
 
-.myslides {
+.myslides,
+.myslides2 {
   width: 480px;
 }
 
