@@ -29,6 +29,19 @@ body {
   animation: fadein 2s;
 }
 
+#navigationtop {
+  display: none;
+}
+
+.particle {
+  display: none;
+}
+
+#short {
+  width: 338px;
+  margin: auto;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -63,8 +76,9 @@ body {
 #portrait {
   /*height: 200px;*/
   border-radius: 3px;
-  max-height: 312px;
+  max-height: 338px;
   box-shadow: 3px 3px 5px rgba(243, 243, 243, 0.38);
+  opacity: 0.8;
 }
 
 #portraitdiv {
@@ -106,6 +120,24 @@ body {
   /*box-shadow: 3px 3px 3px #f2f2f2;*/
   margin-top: 24px;
   margin-bottom: 48px;
+}
+
+.watch:nth-of-type(1) {
+  height: 270px;
+}
+
+.watch:nth-of-type(2) {
+  height: 255px;
+  vertical-align: top;
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+.watch:nth-of-type(3) {
+  height: 255px;
+  vertical-align: top;
+  padding-bottom: 15px;
+  background-color: white;
 }
 
 .button {

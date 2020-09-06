@@ -27,30 +27,34 @@
   </head>
 
   <body>
-    <p style="text-align: right; margin-right: 48px">
+    <p id="navigationtop">
       About me (Soon™) | Projects | Curriculum vitae (Soon™)
     </p>
-    <div class="container">
-      <div class="contentbox introtextbox">
-        <div class="Name">Erik Bennerhed</div>
-        <div id="myintro">
-          <p>
-            UX-Designer, Interaction Designer, Game Designer, Cognitive
-            Scientist.
-          </p>
-          <p>
-            Understanding technology and humans so that we can work in tandem.
-          </p>
-          <p>
-            Erik.Bennerhed@Gmail.com <br />
-            (+46)709309052
-          </p>
+    <div id="animationdiv">
+      <img src="images/visual_smaller.png" class="particle" />
+      <div id="me">
+        <div id="short">
+          <div class="Name">Erik Bennerhed</div>
+          <div id="myintro">
+            <p>
+              UX-Designer, Interaction Designer, Game Designer, Cognitive
+              Scientist.
+            </p>
+            <p>
+              Understanding technology and humans so that we can work in tandem.
+            </p>
+            <p>
+              Erik.Bennerhed@Gmail.com <br />
+              (+46)709309052
+            </p>
+          </div>
+        </div>
+        <div class="contentbox" id="portraitdiv">
+          <img src="images/portrait.jpg" id="portrait" />
         </div>
       </div>
-      <div class="contentbox" id="portraitdiv">
-        <img src="images/portrait.jpg" id="portrait" />
-      </div>
-
+    </div>
+    <div class="container">
       <div class="projects">
         <div class="header">Selection of Projects</div>
 
@@ -92,31 +96,9 @@
               >WearOS Design Guidelines</a
             >
           </p>
-          <img
-            src="images/watch_home.png"
-            class="renterximg"
-            style="height: 425px"
-          />
-          <img
-            src="images/watch_home_8.png"
-            class="renterximg"
-            style="
-              height: 400px;
-              vertical-align: top;
-              padding-bottom: 25px;
-              background-color: white;
-            "
-          />
-          <img
-            src="images/watch_settings.png"
-            class="renterximg"
-            style="
-              height: 400px;
-              vertical-align: top;
-              padding-bottom: 25px;
-              background-color: white;
-            "
-          />
+          <img src="images/watch_home.png" class="watch renterximg" />
+          <img src="images/watch_home_8.png" class="renterximg watch" />
+          <img src="images/watch_settings.png" class="renterximg watch" />
           <p class="projecttext">
             Extended periods of noise is not only bad for your ears, it hurts
             your mental well-being and health.
@@ -156,7 +138,7 @@
 
           <!-- OTHER WORK-->
           <div class="header"></div>
-          <p style="margin-top: 72px; margin-bottom: 32px">
+          <p style="margin-top: 192px; margin-bottom: 32px">
             Contact me at Erik.Bennerhed@Gmail.com <br />or (+46)709309052
           </p>
         </div>
