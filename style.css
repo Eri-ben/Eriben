@@ -273,15 +273,20 @@ a {
   cursor: pointer;
 }
 
+
+#soundappAD{
+  width: 33%;
+}
+
 #brainwritingpar{
   display:inline-block;
   width: 500px; 
   vertical-align: top;
 }
 
-#soundappsketches{
+.soundappimages{
   display: inline-block; 
-  width: 400px; 
+  width: 450px; 
   margin-left: 40px; 
   margin-top: 0; 
   margin-bottom: 0;
