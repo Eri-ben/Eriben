@@ -202,12 +202,16 @@ body {
 }
 
 #soundappdemo1 {
-  width: 99vw;
+  width: 95vw;
   margin-bottom: 0;
 }
 
 #soundappdemo2 {
-  width: 99vw;
+  width: 95vw;
+}
+
+#soundappsketches {
+  width: 90vw;
 }
 
 .backicon {

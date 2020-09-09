@@ -273,6 +273,20 @@ a {
   cursor: pointer;
 }
 
+#brainwritingpar{
+  display:inline-block;
+  width: 500px; 
+  vertical-align: top;
+}
+
+#soundappsketches{
+  display: inline-block; 
+  width: 400px; 
+  margin-left: 40px; 
+  margin-top: 0; 
+  margin-bottom: 0;
+}
+
 #aboutthatphysical{
   display: inline-block; 
   vertical-align: top; 
