@@ -122,6 +122,10 @@ body {
   margin-bottom: 48px;
 }
 
+#usertestingimg {
+  width: 100%;
+}
+
 .watch:nth-of-type(1) {
   height: 270px;
 }
@@ -155,6 +159,10 @@ body {
   width: 150px;
 }
 
+.requirements div {
+  text-align: center;
+}
+
 .projectheader {
   font-size: 32px;
   font-weight: bold;
@@ -170,10 +178,16 @@ body {
 }
 
 #affinityimg {
-  width: 75%;
-  min-width: 380px;
+  width: 350px;
   margin-top: 8xp;
   margin-bottom: 16px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(243, 243, 243, 0.38);
+}
+
+#qstnimg {
+  width: 200px;
+  margin: 32px;
 }
 
 #focusgimg {
@@ -204,7 +218,7 @@ a {
 }
 
 #all_changes {
-  height: 780px;
+  width: 350px;
   margin: 32px auto;
 }
 

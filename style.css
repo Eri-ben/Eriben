@@ -171,6 +171,12 @@ body {
   margin-bottom: 48px;
 }
 
+#usertestingimg{
+  width: 500px; 
+  border-radius: 3px; 
+  margin: 0 auto;
+}
+
 .projecttext {
   width: 750px;
   margin: 0 auto;
@@ -274,6 +280,11 @@ a {
 
 #affinityimg {
   width: 125%;
+}
+
+#qstnimg{
+  width: 300px; 
+  margin-left: 32px;
 }
 
 #focusgimg {
