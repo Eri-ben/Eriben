@@ -262,6 +262,23 @@ a {
   list-style-type: none;
 }
 
+#soundappdemo1{
+  width: 700px; 
+  margin-bottom: 0; 
+  cursor: pointer;
+}
+
+#soundappdemo2{
+  width: 820px; 
+  cursor: pointer;
+}
+
+#aboutthatphysical{
+  display: inline-block; 
+  vertical-align: top; 
+  width: 580px;
+}
+
 .methoddescription {
   width: 60%;
   display: inline-block;

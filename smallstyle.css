@@ -201,6 +201,15 @@ body {
   cursor: pointer;
 }
 
+#soundappdemo1 {
+  width: 99vw;
+  margin-bottom: 0;
+}
+
+#soundappdemo2 {
+  width: 99vw;
+}
+
 .backicon {
   height: 10px;
 }
