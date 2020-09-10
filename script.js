@@ -1,5 +1,13 @@
 $(".isdraggable").draggable({ axis: "x" });
 
+$("#projectsnav").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#projectshook").offset().top - 16,
+    },
+    1200
+  );
+});
 // FRÅN DEMO.JS
 
 $(function () {

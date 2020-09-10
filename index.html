@@ -24,11 +24,22 @@
 
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
+    <!-- Import jquery ###TA BORT OM EJ ANVÄNDS###-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
 
   <body>
     <p id="navigationtop">
-      About me (Soon™) | Projects | Curriculum vitae (Soon™)
+      <a onclick="window.location='me.html'" style="cursor: pointer"
+        >About me</a
+      >
+      | <a id="projectsnav" style="cursor: pointer">Projects</a> |
+      <a>Curriculum vitae (Soon™)</a>
     </p>
     <div id="animationdiv">
       <img src="images/visual_smaller.png" class="particle" />
@@ -56,7 +67,7 @@
     </div>
     <div class="container">
       <div class="projects">
-        <div class="header">Selection of Projects</div>
+        <div class="header" id="projectshook">Selection of Projects</div>
 
         <!-- IRIS Project -->
         <div>
@@ -138,7 +149,7 @@
 
           <!-- OTHER WORK-->
           <div class="header"></div>
-          <p style="margin-top: 192px; margin-bottom: 32px">
+          <p style="margin-top: 192px; margin-bottom: 32px; font-size: small">
             Contact me at Erik.Bennerhed@Gmail.com <br />or (+46)709309052
           </p>
         </div>
