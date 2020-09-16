@@ -58,7 +58,7 @@ $(function () {
       " As this is a speculative design for a future car, it is assumed that the system has a way to determine who enters the car.</p>",
     '<p class="description"><i>"Beep"</i><br><br>Once IRIS (The system) has greeted their user, it can take input via voice command or by the touch-screen keyboard.' +
       " The beep affords the user to speak.</p>",
-    '<p class="description"><i>"OK, you would like to go to work. Did I get it right?"</i><br><br>Come back to this later!</p>',
+    '<p class="description"><i>"OK, you would like to go to work. Did I get it right?"</i><br><br>In case the system would be unsure about what the user said, it converses with the user to let him or her chime in if things went wrong.</p>',
     "<p class='description'>This is the view presented to the user(s) during a trip, when everything is going on as normal. <br><br>" +
       "<b>1)</b>The top panel presents the user summarized information of the trip such as arrival time, current time, travel progression. <br><br>" +
       "<b>2)</b>Next is an area dedicated for the IRIS voice assistant followed by a visual third-person view provided by the autononous car's LIDAR sensors.<br><br>" +
