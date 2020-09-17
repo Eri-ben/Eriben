@@ -279,6 +279,11 @@ a {
   cursor: zoom-in;
 }
 
+.canzoom
+{
+  cursor: zoom-in;
+}
+
 #soundappAD{
   width: 33%;
 }
