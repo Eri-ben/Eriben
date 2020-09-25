@@ -196,6 +196,17 @@ body {
   margin-bottom: 32px;
 }
 
+#toyotaimage {
+  width: 70%;
+  background: white;
+  margin: 32px;
+  min-width: 320px;
+}
+
+#pdfreviewisite {
+  display: none;
+}
+
 #back {
   margin: 16px 16px;
   cursor: pointer;

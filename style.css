@@ -217,8 +217,16 @@ body {
   border-color: #eee;
   border-radius: 1px;
   margin-top: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 16px;
   /*box-shadow: 3px 3px 3px #f2f2f2;*/
+}
+
+#toyotaimage{
+  width: 50%; 
+  background: white; 
+  padding: 16px; 
+  margin: 8px; 
+  min-width: 320px;
 }
 
 .button {
