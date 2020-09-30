@@ -7,7 +7,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: -webkit-linear-gradient(110deg, #fff, #fff, #73d6d3)
+  /*background: -webkit-linear-gradient(110deg, #fff, #fff, #73d6d3)
     no110deg-repeat center center fixed;
   background: -moz-linear-gradient(110deg, #fff, #fff, #73d6d3) no110deger
     center fixed;
@@ -16,7 +16,8 @@ html {
   background: -o-linear-gradient(110deg, #fff, #fff, #73d6d3) no-repeat center
     center fixed;
   background: linear-gradient(110deg, #fff, #fff, #73d6d3) no-repeat center
-    center fixed;
+    center fixed;*/
+  background-image: url("images/asfalt-dark.png");
 }
 
 body {
