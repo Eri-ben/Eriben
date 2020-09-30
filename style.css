@@ -30,7 +30,7 @@ body {
   animation: fadein 2s;
   width: 100vw;
   margin: 0;
-  background-image: url("images/backg.png");
+  /*background-image: url("images/Backg3.png");*/
 }
 
 #navigationtop{
@@ -81,16 +81,16 @@ body {
       opacity: 0.0;
   }
   5%{
-      opacity: 0.5;
+      opacity: 0.58;
   }
   70%{
-    opacity: 0.5;
+    opacity: 0.58;
   }
   
   80%{
       opacity: 0.8;
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
+      /*filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);*/
   }
   95%{
       opacity:0.8;
