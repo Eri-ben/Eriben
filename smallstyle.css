@@ -129,18 +129,18 @@ body {
 }
 
 .watch:nth-of-type(1) {
-  height: 245px;
+  height: 225px;
 }
 
 .watch:nth-of-type(2) {
-  height: 230px;
+  height: 210px;
   vertical-align: top;
   padding-bottom: 15px;
   background-color: white;
 }
 
 .watch:nth-of-type(3) {
-  height: 230px;
+  height: 210px;
   vertical-align: top;
   padding-bottom: 15px;
   background-color: white;
