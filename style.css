@@ -23,13 +23,6 @@ html {
   background-size: 100%;*/
 }
 
-.blur {
-  background: rgba(255, 255, 255, 0.2); 
-  backdrop-filter: blur(8px); 
-  height: 100vh;
-	width: 50%;
-}
-
 body {
   font-family: Courier, Georgia, helvetica, arial, sans-serif;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -45,13 +38,20 @@ body {
   text-align: right; 
   margin-right: 48px;
   cursor: default;
+  background: white;
+  padding: 16px;
+  margin: 0;
+  padding-right: 40px;
+  box-shadow: 1px 1px 5px 5px rgba(0,0,0, 0.1);
 }
 
 #animationdiv {
   height: 80vh;
   min-height: 600px;
   /*background-image: url("images/gbg1.jpg");
-  background-size: 100%;*/
+  background-size: 1920px;*/
+  background: rgba(0,0,0, 0.08);
+  margin-bottom: 40px;
 }
 
 .particle-area{
@@ -149,7 +149,8 @@ body {
   /*height: 200px;*/
   border-radius: 8px;
   max-height: 350px;
-  box-shadow: 3px 3px 8px #f3f3f3;
+  /*box-shadow: 3px 3px 8px #f3f3f3;*/
+  box-shadow: 1px 1px 5px 5px rgba(0,0,0, 0.1);
   opacity: 0.8;
 }
 
@@ -264,8 +265,10 @@ body {
 }
 
 .back {
-  margin: 16px 16px;
+  padding: 16px;
   cursor: pointer;
+  background: white;
+  box-shadow: 1px 1px 5px 5px rgba(0,0,0, 0.1);
 }
 
 .backicon {
