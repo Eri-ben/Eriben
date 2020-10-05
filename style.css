@@ -19,6 +19,15 @@ html {
     center fixed;*/
   overflow-x: hidden;
   background-color: #ECFCFC;
+  /*background-image: url("images/sky3.2.png");
+  background-size: 100%;*/
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px); 
+  height: 100vh;
+	width: 50%;
 }
 
 body {
@@ -30,7 +39,6 @@ body {
   animation: fadein 2s;
   width: 100vw;
   margin: 0;
-  /*background-image: url("images/Backg3.png");*/
 }
 
 #navigationtop{
@@ -42,6 +50,8 @@ body {
 #animationdiv {
   height: 80vh;
   min-height: 600px;
+  /*background-image: url("images/gbg1.jpg");
+  background-size: 100%;*/
 }
 
 .particle-area{
@@ -127,6 +137,7 @@ body {
 .Name {
   font-size: 32px;
   margin-top: 80px;
+  font-weight: bold;
 }
 
 #myintro {
