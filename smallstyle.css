@@ -29,6 +29,7 @@ body {
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
+  margin: 0;
 }
 
 #navigationtop {
@@ -235,6 +236,13 @@ body {
 
 .backicon {
   height: 10px;
+}
+
+.back {
+  padding: 16px;
+  cursor: pointer;
+  background: white;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 a {
