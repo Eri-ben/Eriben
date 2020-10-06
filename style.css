@@ -189,7 +189,7 @@ body {
 #usertestingimg{
   width: 500px; 
   border-radius: 3px; 
-  margin: 0 auto;
+  margin: 16px auto;
 }
 
 .projecttext {
@@ -478,5 +478,5 @@ a {
 }
 
 .rationalecontent {
-  height: 520px;
+  height: 550px;
 }
