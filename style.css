@@ -84,6 +84,15 @@ body {
   display: inline-block
 }
 
+.godirectlytodemo{
+  cursor: pointer;
+  font-weight: bold;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 32px;
+  box-shadow: 1px 1px 5px 5px rgba(0,0,0, 0.05);
+  color: #303030;
+}
 
 @keyframes particleanimate{
   0%{
