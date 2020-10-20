@@ -79,7 +79,7 @@ $(function () {
       " As this is a speculative design for a future car, it is assumed that the system has a way to determine who enters the car.</p>",
     '<p class="description2"><i>"Beep"</i><br><br>Once IRIS (The system) has greeted their user, it can take input via voice command or by the touch-screen keyboard.' +
       " The beep affords the user to speak.</p>",
-    '<p class="description2"><i>"OK, you would like to go to work. Did I get it right?"</i><br><br>Come back to this later!</p>',
+    '<p class="description2"><i>"OK, you would like to go to work. Did I get it right?"</i><br><br>-</p>',
     "<p class='description2'>This is the view presented to the user(s) during a trip, when everything is going on as normal. <br><br>" +
       "<b>1)</b>The top panel presents the user summarized information of the trip such as arrival time, current time, travel progression. <br><br>" +
       "<b>2)</b>Next is an area dedicated for the IRIS voice assistant followed by a visual third-person view provided by the autononous car's LIDAR sensors.<br><br>" +
@@ -92,7 +92,7 @@ $(function () {
     '<p class="description2">Consider, now, that one has been at work the whole day and would like to go home.</p>',
     '<p class="description2"><i>"Going home. Since it is 15:06 and school is out, we will take an alternate route."</i> <br><br> Iris has learned about its environment and knows that a lot of traffic is likely to be imminent during this hour at a school area the car usually would take. It therefore re-directs to an alternative route as that is now the better choice.</p>',
     '<p class="description2">It then takes the new route.</p>',
-    '<p class="description2"><br>And that was it for demo 1! Stay updated on the design changes made after the testing below, and see the full Demo 2 at the bottom of the page! </p>',
+    '<p class="description2"><br>And that was the final demo! </p>',
   ];
 
   var answersource = [
@@ -103,7 +103,7 @@ $(function () {
     ["← Previous", "Next slide →"],
     ["← Previous", "Next slide →"],
     ["← Previous", "Next slide →"],
-    ["← Previous", '<i>"I would like to go home"</i>'],
+    ["← Previous", '<i>"I would like to go home"</i>'], 
     ["← Previous", "Next slide →"],
     ["← Previous", "End slide →"],
     ["← Previous", "Restart"],
