@@ -65,7 +65,7 @@ $(function () {
       "Lastly, the bottom part of the view is divided in three columns: <br><br><b>3)</b> A decision log providing information of past decisions to the left<br><b>4)</b> A map of the area in the middle. <br><b>5)</b> A " +
       '"planned actions"' +
       " column to give the user some transparency of what is going on.</p>",
-    "<p class='description'>If something sudden would happen during the trip, such as a pedestrian suddenly crossing the street, this is quietly conveyed by a clear but not too disturbing signal, as to not disturb the passengers. <br><br> <i>Note: The sound effect is highly speculative, I am by no means close to being a sound designer. The idea was to have a signal that wasn't too disruptive, yet easily discernible.<i/></p>",
+    "<p class='description'>If something sudden would happen during the trip, such as a pedestrian suddenly crossing the street, this is quietly conveyed by a clear but not too disturbing signal, as to not disturb the passengers. <br><br> <i>Note: The idea here is to have some sort of aware-raising sound effect. Some sort of signal that isn't too disruptive, yet easily discernible. <i/></p>",
     '<p class="description">After this, the trip continues normally.</p>',
     '<p class="description"><i>"There was an accident at Southernway Street. <br>I determine this new route will be the fastest way to Work."</i> <br><br> Suppose an accident has just happened ahead. The Iris system gets notified and prepares a reroute as to not get stuck in the traffic. It also updates the map. </p>',
     '<p class="description">Consider, now, that one has been at work the whole day and would like to go home.</p>',
