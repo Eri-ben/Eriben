@@ -329,7 +329,7 @@ a {
 
 .soundappimages{
   display: inline-block; 
-  width: 450px; 
+  width: 410px; 
   margin-left: 40px; 
   margin-top: 0; 
   margin-bottom: 0;
@@ -339,6 +339,11 @@ a {
   display: inline-block; 
   vertical-align: top; 
   width: 580px;
+}
+
+#evaluationparagraph{
+display: inline-block;
+width: 550px;
 }
 
 .methoddescription {
