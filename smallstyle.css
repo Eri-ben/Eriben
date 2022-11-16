@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: Courier, Georgia, helvetica, arial, sans-serif;
+  font-family: Lucida Sans, arial, sans-serif;
   /*FOR FADE IN*/
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -63,6 +63,7 @@ body {
   text-align: left;
   width: 95%;
   margin: 0 auto;
+  line-height: 24px
 }
 
 .Name {
@@ -161,6 +162,7 @@ body {
 
 .requirements div img {
   width: 150px;
+  opacity: 0.75;
 }
 
 .requirements div {
@@ -192,6 +194,7 @@ body {
 #qstnimg {
   width: 200px;
   margin: 32px;
+  opacity: 0.75;
 }
 
 #focusgimg {
@@ -308,6 +311,7 @@ a {
 .democontainer {
   background-color: rgba(192, 192, 192, 0.3);
   padding-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 #demotextfield {
